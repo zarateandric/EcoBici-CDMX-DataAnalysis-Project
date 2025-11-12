@@ -37,7 +37,7 @@ This project follows a defined flow, from raw data to interactive analysis.
 * **Consolidation:** `pandas` was used to read, consolidate, and merge multiple CSV files (representing 3 months of data) into a single DataFrame containing approximately 5 million rows.
 * **Feature Processing:** A transformation in `pandas` was performed to combine separate `Fecha_Retiro` and `Hora_Retiro` columns into a single `timestamp` field. From this, the main business metric was calculated.: **`Duracion_Minutos`**.
 
-### Stage 2: Carga (MySQL)
+### Stage 2: Loading (MySQL)
 
 Instead of relying on a local CSV file, the transformed data was loaded into a MySQL server to simulate a real, robust, and scalable production environment.
 
